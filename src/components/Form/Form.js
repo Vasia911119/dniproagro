@@ -62,7 +62,7 @@ const Form = () => {
       text += `<b>Пошта: </b> ${data.email}\n`;
       text += `<b>Повідомлення: </b> ${data.message}\n`;
       text += `<b>Форма отримана з:</b>\n`;
-      text += `<a href="https://xxx.netlify.app/">https://xxx.netlify.app/</a>`;
+      text += `<a href="https://dniproagro-rho.vercel.app/">https://dniproagro-rho.vercel.app/</a>`;
       const res = sendMessage(text);
       res.then(res => {
         res?.data.ok ? createNotification() : createNotificationError();
